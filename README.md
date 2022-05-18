@@ -2,7 +2,7 @@
 
 ```shell
 finance_project
-|--.idea				# scrapy框架自带
+├─.idea				# scrapy框架自带
 |--relevent_json		# 完成辅助爬取
 |--project
 |  	|--README.md		
@@ -103,3 +103,8 @@ scrapy crawl dailyPrice
 scrapy crawl allStock -o all_stock.json
 ```
 
+### 🏖网盘：爬取数据
+
+链接：https://pan.baidu.com/s/1t7V7uf8ajDDdMgsJOhuDnw?pwd=0000 
+提取码：0000 
+--来自百度网盘超级会员V4的分享
