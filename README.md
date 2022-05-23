@@ -33,6 +33,13 @@ finance_project
 |				|--数据
 ```
 
+```python
+爬虫框架的安装:参考网址:"https://python3webspider.cuiqingcai.com/1.8-pa-chong-kuang-jia-de-an-zhuang"
+安装Scrapy框架及其依赖的库[1.8.2节:Scrapy的安装]
+```
+
+![scrapy安装指南](E:\finance_project\scrapy安装指南.PNG)
+
 ```PYTHON
 # 如何爬取?
 在finance_project/project/project/spiders位置打开命令行CMD
@@ -87,14 +94,18 @@ scrapy crawl historical_trading_data
 scrapy crawl newPrice
 ```
 
-#### 6.dailyPrice.py
+#### <font color='purple'>6.dailyPrice.py</font> -- 每日爬取
 
 ##### 当日所有股票每分钟价格
 
 => 保存路径 project--spiders--实时股价--每日数据
 
 ```shell
+# 爬取方式1:
 scrapy crawl dailyPrice
+# 爬取方式2: automatic_crawl文件夹下爬取脚本
+python auto_script.py # j
+# 执行auto.bat或auto.vbs也可以,但脚本中路径需要修改
 ```
 
 #### 7.allStock.py
