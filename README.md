@@ -38,8 +38,6 @@ finance_project
 安装Scrapy框架及其依赖的库[1.8.2节:Scrapy的安装]
 ```
 
-![scrapy安装指南](E:\finance_project\scrapy安装指南.PNG)
-
 ```PYTHON
 # 如何爬取?
 在finance_project/project/project/spiders位置打开命令行CMD
