@@ -58,7 +58,7 @@ class xxxSpider(scrapy.Spider):
 	}
 ```
 
-### 2.导出json文件(不用FEED EXPORT)
+### 2.导出json文件(不用FEED EXPORTS)
 
 ##### 使用项目导出器 <font color='purple'>JsonItemExporter</font>
 
