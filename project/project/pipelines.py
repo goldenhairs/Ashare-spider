@@ -2,6 +2,7 @@ from textwrap import indent
 from scrapy.pipelines.files import FilesPipeline
 from scrapy import Request
 from scrapy.exporters import JsonItemExporter
+from scrapy.exporters import CsvItemExporter
 import time
 
 
@@ -68,7 +69,9 @@ class dailyPricePipeline:
         day = time_tuple[2]
         self.fp = open(f"实时股价/每日数据/{year}_{month}_{day}.json", "wb")
         self.exporter = JsonItemExporter(self.fp, ensure_ascii=False, encoding='utf-8', indent=4)
+        # self.exporter = CsvItemExporter(self.fp)
         self.exporter.start_exporting()
+        
     
     
     def process_item(self, item, spider):
