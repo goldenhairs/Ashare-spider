@@ -49,9 +49,9 @@ class DailypriceSpider(scrapy.Spider):
         for data in data_list:
             temp_dict = {}
             d_list = data.split(',')
-            temp_dict['时间'] = d_list[0]
-            temp_dict['当前价格'] = d_list[2]
-            temp_dict['成交量'] = d_list[5]
+            temp_dict['时间'] = d_list[0] # 时间 -> time
+            temp_dict['当前价格'] = d_list[2] # 当前价格 -> currentPrice
+            temp_dict['成交量'] = d_list[5] # 成交量 -> tradeVolumn
             trend_list.append(temp_dict)
 
         item['trends'] = trend_list
