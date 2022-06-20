@@ -33,6 +33,15 @@ class historicalTradingDataPipeline(FilesPipeline):
         return f'/历史交易数据/{name}.csv'
 
 
+class tenDaysPipeline(FilesPipeline):
+    def get_media_requests(self, item, info):
+        yield Request(item['file_urls'], meta={'name': item['name']})
+
+    def file_path(self, request, response=None, info=None, *, item=None):
+        name = request.meta['name']
+        return f'{name}_historyTradingData.csv'
+
+
 class newPricePipeline:
     def __init__(self):
         pass

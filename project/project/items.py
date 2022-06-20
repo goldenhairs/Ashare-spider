@@ -65,6 +65,12 @@ class historicalTradingDataItem(Item):
     files = Field()
 
 
+class tenDaysItem(Item):
+    name = Field()
+    file_urls = Field()
+    files = Field()
+
+
 class newCodeItem(Item):
     code = Field()
     new_code = Field()
