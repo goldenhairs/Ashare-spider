@@ -82,7 +82,6 @@ class dailyPricePipeline:
         self.exporter.start_exporting()
         
     
-    
     def process_item(self, item, spider):
         self.exporter.export_item(item)
         return item

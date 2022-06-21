@@ -1,0 +1,1 @@
+1 15 * * 1-5 /opt/Ashare-spider/project/project/automatic_crawl/tenDays_auto.sh

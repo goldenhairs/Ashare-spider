@@ -49,10 +49,11 @@ def getEnd():
     return endTime.strftime("%Y%m%d")
 
 
-# 计算10天前start
+# 计算10(更正为30)天前start
 def getStart(end):
     startTime = datetime.datetime.strptime(end, "%Y%m%d")
-    count = 10 # 倒推count天
+    # count = 10 # 倒推count天
+    count = 30
     while count:
         startTime = (startTime + datetime.timedelta(days=-1)).strftime("%Y%m%d")
         startTime = datetime.datetime.strptime(startTime, "%Y%m%d")
